@@ -68,9 +68,3 @@ ShoppingApp/
 | Picture persists across app restarts | Saved to `AsyncStorage` under `@product_app/profile_picture`, reloaded on mount |
 | Camera permission denied → error message | `ImagePicker.requestCameraPermissionsAsync()` checked; shows an `Alert` if not granted |
 
-## Notes / Possible Extensions
-
-- Currently "Favorite" and "Cart" are the same concept (adding a product to the cart). If you want a **separate** Favorites list distinct from the Cart, I can split `CartContext` into two contexts/stores.
-- The Profile page email/name are hardcoded placeholders — wire them to real auth/user data if/when available.
-- Network detection uses `@react-native-community/netinfo`; on web (Expo web) this gracefully reports `isConnected` based on the browser's online status.
-- Icons are emoji-based for zero extra asset/icon-font dependencies. Swap in `@expo/vector-icons` (already bundled with Expo) if you prefer crisp vector icons — happy to convert these on request.
