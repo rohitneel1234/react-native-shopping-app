@@ -1,4 +1,4 @@
-# Product App (React Native / Expo)
+# Shopping App (React Native / Expo)
 
 A React Native app built with Expo that implements:
 
@@ -11,7 +11,7 @@ A React Native app built with Expo that implements:
 ## Project Structure
 
 ```
-ProductApp/
+ShoppingApp/
 ├── App.js                          # Root component (providers + navigation)
 ├── app.json                        # Expo config (permissions, plugin config)
 ├── babel.config.js
